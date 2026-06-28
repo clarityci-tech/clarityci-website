@@ -1,5 +1,5 @@
 import { Link } from 'react-router-dom';
-import { Zap, Mail, Phone, MapPin, Linkedin, Twitter, Github } from 'lucide-react';
+import { Zap, Mail, Phone, MapPin } from 'lucide-react';
 import './Footer.css';
 
 const Footer = () => {
@@ -20,15 +20,9 @@ const Footer = () => {
               20+ years of experience delivering highly available systems nationwide.
             </p>
             <div className="footer-social">
-              <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn">
-                <Linkedin />
-              </a>
-              <a href="https://twitter.com" target="_blank" rel="noopener noreferrer" aria-label="Twitter">
-                <Twitter />
-              </a>
-              <a href="https://github.com/clarityci-tech" target="_blank" rel="noopener noreferrer" aria-label="GitHub">
-                <Github />
-              </a>
+              <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer">LinkedIn</a>
+              <a href="https://twitter.com" target="_blank" rel="noopener noreferrer">Twitter</a>
+              <a href="https://github.com/clarityci-tech" target="_blank" rel="noopener noreferrer">GitHub</a>
             </div>
           </div>
 

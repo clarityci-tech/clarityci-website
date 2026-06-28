@@ -1,4 +1,4 @@
-import { Code, Cpu, Cloud, Shield, Zap, Smartphone, Database, Globe, ArrowRight } from 'lucide-react';
+import { Code, Cpu, Cloud, Shield, Zap, Smartphone, ArrowRight } from 'lucide-react';
 import { Link } from 'react-router-dom';
 import './Services.css';
 
