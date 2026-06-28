@@ -17,7 +17,7 @@ spec:
     spec:
       containers:
       - name: website
-        image: ghcr.io/clarityci-tech/clarityci-website:latest
+        image: nginx:alpine
         ports:
         - containerPort: 80
           name: http
@@ -28,6 +28,11 @@ spec:
           limits:
             memory: "256Mi"
             cpu: "500m"
+        volumeMounts:
+        - name: html
+          mountPath: /usr/share/nginx/html
+        - name: nginx-config
+          mountPath: /etc/nginx/conf.d
         livenessProbe:
           httpGet:
             path: /
@@ -40,3 +45,11 @@ spec:
             port: 80
           initialDelaySeconds: 5
           periodSeconds: 5
+      volumes:
+      - name: html
+        hostPath:
+          path: /opt/clarityci-website
+          type: DirectoryOrCreate
+      - name: nginx-config
+        configMap:
+          name: nginx-config
