@@ -46,12 +46,12 @@ jobs:
         if: github.ref == 'refs/heads/main'
         run: |
           # Restart deployment via SSH to K3s server
-          ssh caine@192.168.86.110 "kubectl rollout restart deployment/clarityci-website -n clarityci"
-          ssh caine@192.168.86.110 "kubectl rollout status deployment/clarityci-website -n clarityci --timeout=120s"
+          ssh caine@192.168.86.110 "sudo kubectl rollout restart deployment/clarityci-website -n clarityci"
+          ssh caine@192.168.86.110 "sudo kubectl rollout status deployment/clarityci-website -n clarityci --timeout=120s"
 
       - name: Verify deployment
         if: github.ref == 'refs/heads/main'
         run: |
-          ssh caine@192.168.86.110 "kubectl get pods -n clarityci"
-          ssh caine@192.168.86.110 "kubectl get svc -n clarityci"
-          ssh caine@192.168.86.110 "kubectl get ingress -n clarityci"
+          ssh caine@192.168.86.110 "sudo kubectl get pods -n clarityci"
+          ssh caine@192.168.86.110 "sudo kubectl get svc -n clarityci"
+          ssh caine@192.168.86.110 "sudo kubectl get ingress -n clarityci"
