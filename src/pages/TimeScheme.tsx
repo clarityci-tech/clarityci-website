@@ -1,4 +1,4 @@
-import { Clock, Users, Calendar, Shield, BarChart3, CheckCircle, ArrowRight, Zap } from 'lucide-react';
+import { Clock, Users, Calendar, Shield, BarChart3, CheckCircle, ArrowRight } from 'lucide-react';
 import { Link } from 'react-router-dom';
 import './TimeScheme.css';
 
@@ -30,7 +30,7 @@ const TimeScheme = () => {
       description: 'Deep insights into labor costs, productivity, and scheduling efficiency.'
     },
     {
-      icon: <Zap />,
+      icon: <Clock />,
       title: 'Mobile-First',
       description: 'Native mobile apps for iOS and Android. Manage schedules from anywhere.'
     }
@@ -49,20 +49,25 @@ const TimeScheme = () => {
     <div className="timescheme-page">
       {/* Hero */}
       <section className="product-hero">
-        <div className="product-hero-badge">Our Flagship Product</div>
-        <h1>Time<span className="gradient-text">SCHEME</span></h1>
-        <p className="product-hero-subtitle">
-          Employee scheduling reimagined for convention centers. 
-          Intelligent, compliant, and built for the unique challenges of event staffing.
-        </p>
-        <div className="product-hero-cta">
-          <Link to="/contact" className="btn btn-primary btn-large">
-            Request a Demo
-            <ArrowRight />
-          </Link>
-          <a href="#features" className="btn btn-secondary btn-large">
-            Explore Features
-          </a>
+        <div className="product-hero-content">
+          <div className="product-hero-badge">Our Flagship Product</div>
+          <h1>TimeSCHEME</h1>
+          <p className="product-hero-subtitle">
+            Employee scheduling reimagined for convention centers. 
+            Intelligent, compliant, and built for the unique challenges of event staffing.
+          </p>
+          <div className="product-hero-cta">
+            <Link to="/contact" className="btn btn-primary btn-large">
+              Request a Demo
+              <ArrowRight />
+            </Link>
+            <a href="#features" className="btn btn-secondary btn-large">
+              Explore Features
+            </a>
+          </div>
+        </div>
+        <div className="product-hero-image">
+          <img src="/images/office.jpg" alt="Convention center scheduling" />
         </div>
       </section>
 
@@ -95,7 +100,7 @@ const TimeScheme = () => {
       {/* Features */}
       <section id="features" className="product-features section">
         <div className="section-header">
-          <h2>Powerful <span className="gradient-text">Features</span></h2>
+          <h2>Powerful Features</h2>
           <p>Everything you need to manage your workforce efficiently</p>
         </div>
         <div className="grid grid-3">
@@ -113,7 +118,7 @@ const TimeScheme = () => {
       <section className="benefits-section">
         <div className="benefits-content">
           <div className="benefits-text">
-            <h2>Why Choose <span className="gradient-text">TimeSCHEME</span>?</h2>
+            <h2>Why Choose TimeSCHEME?</h2>
             <p>
               Built from the ground up with input from convention center operators, 
               TimeSCHEME addresses the real challenges you face every day.
@@ -128,25 +133,7 @@ const TimeScheme = () => {
             </ul>
           </div>
           <div className="benefits-visual">
-            <div className="dashboard-preview">
-              <div className="preview-header">
-                <span>Schedule Overview</span>
-              </div>
-              <div className="preview-stats">
-                <div className="preview-stat">
-                  <span className="stat-label">Staff Scheduled</span>
-                  <span className="stat-value">247</span>
-                </div>
-                <div className="preview-stat">
-                  <span className="stat-label">Open Shifts</span>
-                  <span className="stat-value">12</span>
-                </div>
-                <div className="preview-stat">
-                  <span className="stat-label">Coverage</span>
-                  <span className="stat-value">98%</span>
-                </div>
-              </div>
-            </div>
+            <img src="/images/meeting.jpg" alt="Team meeting" className="benefits-image" />
           </div>
         </div>
       </section>
@@ -154,7 +141,7 @@ const TimeScheme = () => {
       {/* Target Audience */}
       <section className="audience-section section">
         <div className="section-header">
-          <h2>Built For <span className="gradient-text">You</span></h2>
+          <h2>Built For You</h2>
         </div>
         <div className="audience-grid">
           <div className="audience-card">

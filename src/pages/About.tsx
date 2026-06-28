@@ -1,4 +1,4 @@
-import { Award, Users, Target, Lightbulb, ArrowRight, Zap } from 'lucide-react';
+import { Award, Users, Target, Lightbulb, ArrowRight } from 'lucide-react';
 import { Link } from 'react-router-dom';
 import './About.css';
 
@@ -12,17 +12,17 @@ const About = () => {
     {
       icon: <Users />,
       title: 'Partnership',
-      description: 'We dont just build software; we build relationships. Your success is our success, and were with you every step of the way.'
+      description: 'We don\'t just build software; we build relationships. Your success is our success, and we\'re with you every step of the way.'
     },
     {
       icon: <Lightbulb />,
       title: 'Innovation',
-      description: 'Technology moves fast, and so do we. We stay ahead of the curve so you dont have to, bringing cutting-edge solutions to every project.'
+      description: 'Technology moves fast, and so do we. We stay ahead of the curve so you don\'t have to, bringing cutting-edge solutions to every project.'
     },
     {
       icon: <Award />,
       title: 'Integrity',
-      description: 'Transparency, honesty, and doing the right thing even when no one is watching. Thats how weve built trust for over two decades.'
+      description: 'Transparency, honesty, and doing the right thing even when no one is watching. That\'s how we\'ve built trust for over two decades.'
     }
   ];
 
@@ -40,9 +40,9 @@ const About = () => {
       {/* Hero */}
       <section className="about-hero">
         <div className="about-hero-content">
-          <h1>Building <span className="gradient-text">Clarity</span> Since 2004</h1>
+          <h1>Building Clarity Since 2004</h1>
           <p>
-            For over 20 years, weve been transforming complex business challenges into 
+            For over 20 years, we\'ve been transforming complex business challenges into 
             elegant software solutions. We bring clarity to chaos, simplicity to complexity, 
             and vision to reality.
           </p>
@@ -57,7 +57,7 @@ const About = () => {
             <p>
               Clarity CI was born from a simple observation: businesses were drowning in 
               complexity. Too many systems, too many integrations, too many things that 
-              didnt quite work together.
+              didn\'t quite work together.
             </p>
             <p>
               We set out to change that. Starting with middleware solutions that connected 
@@ -69,23 +69,26 @@ const About = () => {
               commitment to clarity and excellence that defined us from day one.
             </p>
           </div>
-          <div className="story-stats">
-            <div className="story-stat">
-              <span className="stat-number">20+</span>
-              <span className="stat-label">Years in Business</span>
-            </div>
-            <div className="story-stat">
-              <span className="stat-number">100+</span>
-              <span className="stat-label">Projects Delivered</span>
-            </div>
-            <div className="story-stat">
-              <span className="stat-number">50+</span>
-              <span className="stat-label">Enterprise Clients</span>
-            </div>
-            <div className="story-stat">
-              <span className="stat-number">99.9%</span>
-              <span className="stat-label">Client Retention</span>
-            </div>
+          <div className="story-image">
+            <img src="/images/meeting.jpg" alt="Team collaboration" />
+          </div>
+        </div>
+        <div className="story-stats">
+          <div className="story-stat">
+            <span className="stat-number">20+</span>
+            <span className="stat-label">Years in Business</span>
+          </div>
+          <div className="story-stat">
+            <span className="stat-number">100+</span>
+            <span className="stat-label">Projects Delivered</span>
+          </div>
+          <div className="story-stat">
+            <span className="stat-number">50+</span>
+            <span className="stat-label">Enterprise Clients</span>
+          </div>
+          <div className="story-stat">
+            <span className="stat-number">99.9%</span>
+            <span className="stat-label">Client Retention</span>
           </div>
         </div>
       </section>
@@ -93,7 +96,7 @@ const About = () => {
       {/* Values */}
       <section className="values-section">
         <div className="section-header">
-          <h2>Our <span className="gradient-text">Values</span></h2>
+          <h2>Our Values</h2>
           <p>The principles that guide everything we do</p>
         </div>
         <div className="grid grid-2">
@@ -110,7 +113,7 @@ const About = () => {
       {/* Timeline */}
       <section className="timeline-section section">
         <div className="section-header">
-          <h2>Our <span className="gradient-text">Journey</span></h2>
+          <h2>Our Journey</h2>
           <p>Two decades of innovation and growth</p>
         </div>
         <div className="timeline">
@@ -128,10 +131,10 @@ const About = () => {
       <section className="approach-section">
         <div className="approach-content">
           <div className="approach-text">
-            <h2>Our <span className="gradient-text">Approach</span></h2>
+            <h2>Our Approach</h2>
             <p>
               We believe the best software comes from truly understanding your business. 
-              Thats why we shadow your resources, learn your processes, and immerse 
+              That\'s why we shadow your resources, learn your processes, and immerse 
               ourselves in your world before writing a single line of code.
             </p>
             <p>
@@ -144,10 +147,8 @@ const About = () => {
               <ArrowRight />
             </Link>
           </div>
-          <div className="approach-visual">
-            <div className="approach-icon">
-              <Zap className="icon-large" />
-            </div>
+          <div className="approach-image">
+            <img src="/images/technology.jpg" alt="Technology solutions" />
           </div>
         </div>
       </section>
@@ -156,7 +157,7 @@ const About = () => {
       <section className="about-cta">
         <div className="cta-content">
           <h2>Ready to Work Together?</h2>
-          <p>Lets discuss how we can bring clarity to your next project.</p>
+          <p>Let\'s discuss how we can bring clarity to your next project.</p>
           <Link to="/contact" className="btn btn-primary btn-large">
             Get in Touch
             <ArrowRight />

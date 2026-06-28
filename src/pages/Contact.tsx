@@ -55,9 +55,9 @@ const Contact = () => {
       {/* Hero */}
       <section className="contact-hero">
         <div className="contact-hero-content">
-          <h1>Lets <span className="gradient-text">Connect</span></h1>
+          <h1>Let's Connect</h1>
           <p>
-            Ready to transform your business? Wed love to hear about your project 
+            Ready to transform your business? We'd love to hear about your project 
             and discuss how we can help.
           </p>
         </div>
@@ -71,7 +71,7 @@ const Contact = () => {
             <h2>Get in Touch</h2>
             <p className="contact-intro">
               Whether you have a specific project in mind or just want to explore 
-              possibilities, were here to help.
+              possibilities, we're here to help.
             </p>
             
             <div className="contact-methods">
@@ -93,7 +93,7 @@ const Contact = () => {
             <div className="contact-note">
               <h3>What happens next?</h3>
               <ol>
-                <li>Well review your message within 24 hours</li>
+                <li>We'll review your message within 24 hours</li>
                 <li>Schedule a discovery call to understand your needs</li>
                 <li>Provide a tailored proposal with timeline and estimate</li>
               </ol>
@@ -106,7 +106,7 @@ const Contact = () => {
               <div className="form-success">
                 <CheckCircle className="success-icon" />
                 <h3>Message Sent!</h3>
-                <p>Thank you for reaching out. Well get back to you within 24 hours.</p>
+                <p>Thank you for reaching out. We'll get back to you within 24 hours.</p>
               </div>
             ) : (
               <form className="contact-form" onSubmit={handleSubmit}>
@@ -195,7 +195,7 @@ const Contact = () => {
       {/* FAQ */}
       <section className="faq-section">
         <div className="section-header">
-          <h2>Frequently Asked <span className="gradient-text">Questions</span></h2>
+          <h2>Frequently Asked Questions</h2>
         </div>
         <div className="faq-grid">
           <div className="faq-item">
@@ -204,7 +204,7 @@ const Contact = () => {
           </div>
           <div className="faq-item">
             <h4>How long does a typical project take?</h4>
-            <p>Project timelines vary based on scope. A typical MVP takes 3-4 months, while full enterprise solutions may take 6-12 months. Well provide a detailed timeline during our proposal.</p>
+            <p>Project timelines vary based on scope. A typical MVP takes 3-4 months, while full enterprise solutions may take 6-12 months. We'll provide a detailed timeline during our proposal.</p>
           </div>
           <div className="faq-item">
             <h4>Do you offer ongoing support?</h4>
@@ -212,7 +212,7 @@ const Contact = () => {
           </div>
           <div className="faq-item">
             <h4>What is your pricing model?</h4>
-            <p>We work on both fixed-price and time-and-materials bases, depending on project requirements. After discovery, well recommend the best approach for your needs.</p>
+            <p>We work on both fixed-price and time-and-materials bases, depending on project requirements. After discovery, we'll recommend the best approach for your needs.</p>
           </div>
         </div>
       </section>

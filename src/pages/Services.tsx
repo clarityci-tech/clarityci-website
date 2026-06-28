@@ -79,11 +79,14 @@ const Services = () => {
       {/* Hero */}
       <section className="services-hero">
         <div className="services-hero-content">
-          <h1>Our <span className="gradient-text">Services</span></h1>
+          <h1>Our Services</h1>
           <p>
             From concept to deployment, we deliver end-to-end software solutions 
             that drive business growth and operational excellence.
           </p>
+        </div>
+        <div className="services-hero-image">
+          <img src="/images/technology.jpg" alt="Technology solutions" />
         </div>
       </section>
 
@@ -108,7 +111,7 @@ const Services = () => {
       {/* Tech Stack */}
       <section className="tech-stack">
         <div className="section-header">
-          <h2>Our <span className="gradient-text">Tech Stack</span></h2>
+          <h2>Our Tech Stack</h2>
           <p>Modern technologies we use to build world-class solutions</p>
         </div>
         <div className="tech-grid">
@@ -128,7 +131,7 @@ const Services = () => {
       {/* Process */}
       <section className="process-section section">
         <div className="section-header">
-          <h2>Our <span className="gradient-text">Process</span></h2>
+          <h2>Our Process</h2>
           <p>How we deliver exceptional results, every time</p>
         </div>
         <div className="process-steps">

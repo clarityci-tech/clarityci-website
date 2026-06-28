@@ -1,92 +1,100 @@
 .about-page {
-  padding-top: 80px;
+  padding-top: 70px;
 }
 
 /* Hero */
 .about-hero {
-  background: var(--darker);
-  padding: 6rem 2rem;
+  background: linear-gradient(135deg, var(--light) 0%, var(--light-gray) 100%);
+  padding: 4rem 2rem;
   text-align: center;
-  border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+  border-bottom: 1px solid var(--border);
 }
 
 .about-hero-content {
-  max-width: 800px;
+  max-width: 700px;
   margin: 0 auto;
 }
 
 .about-hero h1 {
-  font-size: 3.5rem;
-  margin-bottom: 1.5rem;
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+  color: var(--dark);
 }
 
 .about-hero p {
-  font-size: 1.25rem;
+  font-size: 1.125rem;
   color: var(--gray);
 }
 
 /* Story */
 .story-section {
-  padding: 6rem 2rem;
+  padding: 4rem 2rem;
+  background: var(--light);
 }
 
 .story-grid {
-  max-width: 1200px;
-  margin: 0 auto;
+  max-width: 1000px;
+  margin: 0 auto 2rem;
   display: grid;
   grid-template-columns: 1fr 1fr;
-  gap: 4rem;
+  gap: 3rem;
   align-items: center;
 }
 
 .story-text h2 {
-  font-size: 2.5rem;
-  margin-bottom: 1.5rem;
+  font-size: 1.75rem;
+  margin-bottom: 1rem;
+  color: var(--dark);
 }
 
 .story-text p {
   color: var(--gray);
-  margin-bottom: 1.5rem;
+  margin-bottom: 1rem;
   line-height: 1.7;
-  font-size: 1.1rem;
+  font-size: 0.95rem;
+}
+
+.story-image img {
+  width: 100%;
+  border-radius: 10px;
+  box-shadow: 0 10px 30px var(--shadow);
 }
 
 .story-stats {
+  max-width: 800px;
+  margin: 0 auto;
   display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 1.5rem;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 1rem;
 }
 
 .story-stat {
-  background: var(--gray-dark);
-  border-radius: 12px;
-  padding: 2rem;
+  background: var(--light-gray);
+  border-radius: 8px;
+  padding: 1.25rem;
   text-align: center;
-  border: 1px solid rgba(255, 255, 255, 0.1);
+  border: 1px solid var(--border);
 }
 
 .story-stat .stat-number {
   display: block;
-  font-size: 2.5rem;
-  font-weight: 800;
-  background: var(--gradient-1);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  background-clip: text;
-  margin-bottom: 0.5rem;
+  font-size: 1.75rem;
+  font-weight: 700;
+  color: var(--primary);
+  margin-bottom: 0.25rem;
 }
 
 .story-stat .stat-label {
   color: var(--gray);
-  font-size: 0.9rem;
+  font-size: 0.8rem;
 }
 
 /* Values */
 .values-section {
-  background: var(--darker);
-  padding: 6rem 2rem;
-  border-top: 1px solid rgba(255, 255, 255, 0.05);
-  border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+  background: var(--light-gray);
+  padding: 4rem 2rem;
+  border-top: 1px solid var(--border);
+  border-bottom: 1px solid var(--border);
 }
 
 .value-card {
@@ -95,11 +103,12 @@
 
 /* Timeline */
 .timeline-section {
-  padding: 6rem 2rem;
+  padding: 4rem 2rem;
+  background: var(--light);
 }
 
 .timeline {
-  max-width: 800px;
+  max-width: 700px;
   margin: 0 auto;
   position: relative;
 }
@@ -107,100 +116,91 @@
 .timeline::before {
   content: '';
   position: absolute;
-  left: 80px;
+  left: 70px;
   top: 0;
   bottom: 0;
-  width: 2px;
-  background: linear-gradient(180deg, var(--primary), var(--secondary));
+  width: 1px;
+  background: var(--border);
 }
 
 .timeline-item {
   display: flex;
   align-items: flex-start;
-  gap: 2rem;
-  padding: 1.5rem 0;
+  gap: 1.5rem;
+  padding: 1rem 0;
   position: relative;
 }
 
 .timeline-year {
-  width: 60px;
+  width: 50px;
   text-align: right;
-  font-weight: 700;
+  font-weight: 600;
   color: var(--primary);
-  font-size: 1.1rem;
+  font-size: 0.95rem;
 }
 
 .timeline-dot {
-  width: 16px;
-  height: 16px;
-  background: var(--primary);
+  width: 12px;
+  height: 12px;
+  background: var(--accent);
   border-radius: 50%;
   margin-top: 4px;
   flex-shrink: 0;
-  box-shadow: 0 0 20px rgba(0, 212, 255, 0.5);
 }
 
 .timeline-item p {
   flex: 1;
   color: var(--gray);
+  font-size: 0.9rem;
 }
 
 /* Approach */
 .approach-section {
-  background: var(--darker);
-  padding: 6rem 2rem;
-  border-top: 1px solid rgba(255, 255, 255, 0.05);
-  border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+  background: var(--light-gray);
+  padding: 4rem 2rem;
+  border-top: 1px solid var(--border);
+  border-bottom: 1px solid var(--border);
 }
 
 .approach-content {
-  max-width: 1200px;
+  max-width: 1000px;
   margin: 0 auto;
   display: grid;
   grid-template-columns: 1fr 1fr;
-  gap: 4rem;
+  gap: 3rem;
   align-items: center;
 }
 
 .approach-text h2 {
-  font-size: 2.5rem;
-  margin-bottom: 1.5rem;
+  font-size: 1.75rem;
+  margin-bottom: 1rem;
+  color: var(--dark);
 }
 
 .approach-text p {
   color: var(--gray);
-  margin-bottom: 1.5rem;
+  margin-bottom: 1rem;
   line-height: 1.7;
-  font-size: 1.1rem;
+  font-size: 0.95rem;
 }
 
-.approach-visual {
+.approach-image {
   display: flex;
   justify-content: center;
-  align-items: center;
 }
 
-.approach-icon {
-  width: 200px;
-  height: 200px;
-  background: var(--gradient-1);
-  border-radius: 50%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  box-shadow: 0 20px 60px rgba(0, 212, 255, 0.3);
-}
-
-.icon-large {
-  width: 100px;
-  height: 100px;
-  color: var(--light);
+.approach-image img {
+  width: 100%;
+  max-width: 400px;
+  border-radius: 10px;
+  box-shadow: 0 10px 30px var(--shadow);
 }
 
 /* CTA */
 .about-cta {
-  padding: 6rem 2rem;
+  padding: 4rem 2rem;
   text-align: center;
+  background: var(--light);
 }
 
 /* Responsive */
@@ -210,36 +210,35 @@
     grid-template-columns: 1fr;
   }
 
-  .approach-visual {
+  .story-image,
+  .approach-image {
     order: -1;
   }
 
-  .approach-icon {
-    width: 150px;
-    height: 150px;
+  .story-stats {
+    grid-template-columns: repeat(2, 1fr);
   }
 
-  .icon-large {
-    width: 70px;
-    height: 70px;
+  .approach-image img {
+    max-width: 350px;
   }
 }
 
 @media (max-width: 768px) {
   .about-hero h1 {
-    font-size: 2.5rem;
+    font-size: 2rem;
   }
 
   .story-stats {
-    grid-template-columns: 1fr;
+    grid-template-columns: 1fr 1fr;
   }
 
   .timeline::before {
-    left: 20px;
+    left: 16px;
   }
 
   .timeline-year {
-    width: 50px;
-    font-size: 0.9rem;
+    width: 40px;
+    font-size: 0.85rem;
   }
 }
